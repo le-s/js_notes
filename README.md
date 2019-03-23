@@ -1,6 +1,15 @@
 # js_notes
 
 
+## Higher order functions
+- returns a function
+- put one function into another function
+- A good example of a higher order function is filter
+    - 
+## Callback functions
+- functions that you send into another function
+- host function will callback to them
+
 ## Hoisting
 - this is caused because when var is used to declare variables, in the scope it will declare first because it will hoist the variable to the top and do the assignment after
 - using let/const instead of var for more predictable behavior 
@@ -104,3 +113,16 @@ console.log(a) //{num: 2}
 
 ## Falsey values 
 - False, 0, NaN, undefined, Null, "" (empty string)
+
+## What is node?
+- A JavaScript environment that allows you to run/execute a program written in JS
+- What makes it good?
+    - non-blocking: Think of it as a server loop; going round & round. A request comes in, the loop grabs it and passes it along (like a database query), sets up a callback and repeats. It does not wait for the requested info to come back, instead it goes back into the loop waiting for the next request
+    - event driven: Because it is constantly looping, you are not spending anytime waiting for them (return a query). You can have multiple requests opens and will respond to them on their own time.
+    - the server only reacts when an event occurs. Could be a request, a file being loaded, or a query being executed
+    
+## What is express?
+- (Simplified) Express.js is to Node.js what Ruby on Rails or Sinatra is to Ruby
+- Express is a framework that allows you to organize you web application into an MVC architecture
+- Express.js basically helps you manage everything, from routes, to handling requests and views.
+
