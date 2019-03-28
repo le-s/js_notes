@@ -126,3 +126,38 @@ console.log(a) //{num: 2}
 - Express is a framework that allows you to organize you web application into an MVC architecture
 - Express.js basically helps you manage everything, from routes, to handling requests and views.
 
+
+## ES6 vs ES5
+- 
+
+# Possible interview questions for JS
+
+## var vs let
+- var is function scope
+- let is block scope
+- var gets hoisted
+
+## == vs ===
+- both are comparison operators
+- == compares value, not type
+- === compares value and type
+
+## let vs const
+- you can reassign let variables
+- const you cannot reassign
+- you can modify const if it is not a primitive value
+    - you can push to an array, but cant reassign the const to a new array
+    
+## difference between undefined & null
+- both represent empty values
+- undefined is the default value when a variable is 
+- null is defined by the user
+- typeof(undefined) => undefined
+- typeof(null) => object
+
+## use of arrow functions?
+- when in a function scope, this would refer to the window
+    - using fat arrow function will allow for a more predictable output
+    
+## what is prototypal inheritance?
+- 
