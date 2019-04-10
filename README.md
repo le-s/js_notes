@@ -161,3 +161,14 @@ console.log(a) //{num: 2}
     
 ## what is prototypal inheritance?
 - 
+
+## DOM Manipulation
+- DOM Methods
+    - getElementById
+    - getElementsByClassName => returns an array of element nodes
+    - getElementsByTagName => returns an array of element nodes
+    - getElementsByName => returns an array of element nodes
+    - querySelector
+    - querySelectorAll => returns an array of element nodes
+    
+
