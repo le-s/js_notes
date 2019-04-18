@@ -32,7 +32,9 @@ function logIt(){
 logIt();
 ```
 ## Closures
-- A function that has access to variables outside of its scope
+- A feature in JS where the inner function has access to the outer function's variables
+- when a function is executed, once it finishes executing it's variables cease to exist
+- the inner function preserves the scope chain of the enclosing function at the time the enclosing function was executed, and thus can access the enclosing function’s variables.
 
 ## Primitive Data Types
 - String, Number, Null, undefined, Boolean, Symbols(ES6)
@@ -160,15 +162,30 @@ console.log(a) //{num: 2}
     - using fat arrow function will allow for a more predictable output
     
 ## what is prototypal inheritance?
-- 
+- every object has a property of prototype where you can add methods and properties to it
+- when you create object (b) from object (a), object (b) will inherit all the properties from object (a) through the prototype property
+- when you call a method, the object will check itself if it has the method. If not, it will check it's parent to see if the parent has the method. If it does, it will execute the parents method 
 
-## DOM Manipulation
-- DOM Methods
-    - getElementById
-    - getElementsByClassName => returns an array of element nodes
-    - getElementsByTagName => returns an array of element nodes
-    - getElementsByName => returns an array of element nodes
-    - querySelector
-    - querySelectorAll => returns an array of element nodes
-    
+## difference between function declaration & function expression
+- function expression is an anonymous function saved to a variable
+    - will behave like a variable in that it will not exist before it's definition
+    - therefore you cannot call it before it's definition
+- function declaration is a named function
+    - can be called at anytime
+```js
+function funcD() {
+    console.log('I'm a function declaration')
+}
 
+let funcE = function() {
+    console.log('I'm a function expression')
+}
+```
+
+## what is a promise? Why do we use it
+- is the promise of the eventual completition of something
+- Easier to debug/cleaner code
+
+## setTimeout()
+- more of a puzzle when asked
+- setTimeout() makes it asynchronous making it execute once everything in the call stack has been executed
