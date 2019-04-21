@@ -189,3 +189,20 @@ let funcE = function() {
 ## setTimeout()
 - more of a puzzle when asked
 - setTimeout() makes it asynchronous making it execute once everything in the call stack has been executed
+
+# General Trivia
+
+## What happens when you go to a url?
+1. Type in url
+2. Browser looks for IP address
+    - Browser cache => OS cache => Router cache => ISP cache => Recursive search
+3. Once found, the browser send an HTTP GET request to the web server
+4. The webserver responds with a permanent redirect
+5. The browser follows the redirect and sends a GET request
+6. The server receives the GET request, processes it
+7. The server sends back an HTTP response
+8. The browser begins rendering the HTML
+9. The browser sends reqeuests for objects embedded in HTML and the server sends responses back until page is completed
+    - Images, style sheets, javascript
+    
+
