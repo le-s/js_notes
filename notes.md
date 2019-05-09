@@ -36,6 +36,9 @@
   - you can set a DB for each of these environments
 - incorporated in the YAML file of the project directory, usually "database.yml"
   - database.yml is used by rails to connect the appropriate database to the Rails environment
+- DB have tables and rows, Rails has models(classes) & objects
+  - use rails g migration {tableName} to create a table => add column names after => rails db:migrate to create the table
+  - then create the model for assocications 
 ## How do you implement AWS S3 into your project?
 ## How do you avoid (n + 1) queries?
 ## What's the benefit to avoiding multiple queries?
