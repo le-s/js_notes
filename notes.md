@@ -13,6 +13,7 @@
 - What is React?
 - Benefits?
 - Drawbacks?
+- Stateless vs stateful?
 ## Redux
 - What is Redux?
 ## Node
@@ -20,13 +21,21 @@
 - How is it implemented into your project?
 ## Ruby
 ## Ruby on Rails
+- How does the backend interact with the frontend?
+- How does it work? MVC?
 ## Express
 - What is Express?
 - How is it implemented?
 ## AWS S3
 
 # Flex-o
+## Single page application vs multi-page application?
 ## How is Postgres implemented into your project?
+- it is setup when you create your project, setting what you want your DB to be
+- there are databases for different environments (test, development, production)
+  - you can set a DB for each of these environments
+- incorporated in the YAML file of the project directory, usually "database.yml"
+  - database.yml is used by rails to connect the appropriate database to the Rails environment
 ## How do you implement AWS S3 into your project?
 ## How do you avoid (n + 1) queries?
 ## What's the benefit to avoiding multiple queries?
