@@ -27,6 +27,8 @@
 - What is Express?
 - How is it implemented?
 ## AWS S3
+## How does frontend and backend interact with each other?
+- when on a website and a user clicks on a button => the button has a specific action and makes an AJAX call => in this call it has a url that matches a backend route with the type of request it is (POST/GET) => because the request knows what endpoint and method it has, it passes it to the correct controller => the controller returns a JSON object => the frontend determines what to do with the object
 
 # Flex-o
 ## Single page application vs multi-page application?
