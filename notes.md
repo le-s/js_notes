@@ -14,6 +14,10 @@
 - Benefits?
 - Drawbacks?
 - Stateless vs stateful?
+  - Stateless
+    - presentational component => used to display information; does not have state, passed props
+  - Stateful => functional component => 
+    - logic involved; handling of state (ex. form inputs and storing those inputs); can mutate state (setState)
 ## Redux
 - What is Redux?
 ## Node
@@ -32,6 +36,26 @@
 
 # Flex-o
 ## Single page application vs multi-page application?
+- Multi Page
+  - Traditional web apps that reload an entire page and displays a new one
+  - Pros: 
+    - Performs well on search engines
+    - Provides a visual map of the web app to the user
+  - Cons:
+    - Complex development
+    - Coupled backend and frontend
+- Single Page
+  - Consists of a single page; faster because logic is executed on the web browser vs on the server
+  - After the page is loaded, only data is sent back and forth vs the entire HTML
+  - Pros:
+    - Smooth and fast UX
+    - Easier to develop and deploy
+    - Easier to debug => not sure why
+    - Can be transitioned to mobile by reusing the same backend code
+  - Cons: 
+    - Perform poor on search engines, but with isomorphic/server-side rendering can utilize SEO as well
+    - Provide a single sharing link
+    - Less secure than Multi page applications due to cross-site scripting
 ## How is Postgres implemented into your project?
 - it is setup when you create your project, setting what you want your DB to be
 - there are databases for different environments (test, development, production)
