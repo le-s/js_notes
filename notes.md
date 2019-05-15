@@ -11,8 +11,16 @@
 - What are the drawbacks?
 ## React
 - What is React?
+  - A library that leverages the VirtualDOM to render HTML more efficiently. The virtualDOM would check for any changes and only change the nodes that are affected versus reloading the entire HTML tree
 - Benefits?
+  - Virtual DOM => makes the user experience better and faster
+  - Reusable components => keeps code DRY
+  - One-direction data flow => downward data binding ensures children cannot affect their parents (setState)
+  - Open-source FB library => constant support
 - Drawbacks?
+  - High pace development => because there's a lot of support and constant development; programmers must constantly keep up with the new additions
+  - Poor documentation => constant development means less documentation; new libraries also must update as well
+  - SEO hassle => due to client-side rendering search engines can't index or index poorly on dynamic pages
 - Stateless vs stateful?
   - Stateless
     - presentational component => used to display information; does not have state, passed props
@@ -20,6 +28,8 @@
     - logic involved; handling of state (ex. form inputs and storing those inputs); can mutate state (setState)
 ## Redux
 - What is Redux?
+  - A library that allows you to create a store that contains the entire state of your app
+    - To change the state you must deploy an action that gets traced to the reducer that will return how you want the state returned
 ## Node
 - What is Node?
 - How is it implemented into your project?
