@@ -78,6 +78,7 @@
 ## How do you implement AWS S3 into your project?
 ## How do you avoid (n + 1) queries?
 ## What's the benefit to avoiding multiple queries?
+## What is Webpack? What does it do?
 ## How does a query find what it's looking for? In PostgreSQL
 
 ## What is an API? How do you know what type of API it is?
