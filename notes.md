@@ -30,8 +30,15 @@
 - What is Redux?
   - A library that allows you to create a store that contains the entire state of your app
     - To change the state you must deploy an action that gets traced to the reducer that will return how you want the state returned
-## Node
+## Node.js
 - What is Node?
+  - run-time environment that includes everything you need to execute a program written in JS
+  - event driven, non-blocking I/O model that makes it lightweight and efficient
+    - Blocking I/O takes time and blocks other function; one user's info has to be printed before requesting for user 2
+    - Non-block I/O allows for multiple requests carried out independently and returning responses at different times
+  - allows you to write JS code for the backend
+    - makes it highly scalable since you can have a single thread handle multiple requests utilizing the event queue
+    - good for data intensive or real-time apps
 - How is it implemented into your project?
 ## Ruby
 ## Ruby on Rails
