@@ -5,10 +5,13 @@
 - what experience do you have with MySQL?
 ## MongoDB
 - how is mongoDB implemented into your project?
-- What experience do you have with this?
-- What is MongoDB?
+  - in the root file import mongoose and use the connect function to connec the db to project. DB should include key value pairs of the key to the bucket of your DB
 - What are the benefits of a non-relational db?
+  - Flexible, if your data is not structured in a certain way, or you didn't plan for it to be structured in a certain way, no biggie; you can scale without thinking about rows/columns
+  - Faster, at the expense of ACID compliance.
+  - Ease of use, everything is an object
 - What are the drawbacks?
+  - Cannot join different sets of data; may cost you the speed you gain if you queries to the DB to get the data you need
 ## React
 - What is React?
   - A library that leverages the VirtualDOM to render HTML more efficiently. The virtualDOM would check for any changes and only change the nodes that are affected versus reloading the entire HTML tree
