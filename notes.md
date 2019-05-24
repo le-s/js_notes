@@ -50,10 +50,16 @@
 ## Express
 - What is Express?
 - How is it implemented?
+## MERN Frontend + Backend
+- Create the Frontend with React. Backend with Express. Frontend and Backend interact with the use of Axios.
+- EX. Fill out form in the frontend. The submit button has an action that gets dispatched with the form data. Inside that action there is an axios call with the post method and the backend endpoint. The backend will return new data that will be passed to the reducer and change the state.
 ## AWS S3
 ## How does frontend and backend interact with each other?
 - when on a website and a user clicks on a button => the button has a specific action and makes an AJAX call => in this call it has a url that matches a backend route with the type of request it is (POST/GET) => because the request knows what endpoint and method it has, it passes it to the correct controller => the controller returns a JSON object => the frontend determines what to do with the object
-
+## AJAX
+- make requests to the server without reloading the page
+- receive and work with data from the server
+- "asynchrous" in nature
 # Flex-o
 ## Single page application vs multi-page application?
 - Multi Page
