@@ -1,8 +1,8 @@
 # Skills
 ## PostgreSQL
 - what is it?
-## MySQL
-- what experience do you have with MySQL?
+  - Relational database
+  - Used for my fullstack; declared when creating my project to use postgres as the db locally
 ## MongoDB
 - how is mongoDB implemented into your project?
   - in the root file import mongoose and use the connect function to connec the db to project. DB should include key value pairs of the key to the bucket of your DB
@@ -99,6 +99,6 @@
 - Webpack modularizes code
 - Creates a version of your code that different browsers can read
 ## How does a query find what it's looking for? In PostgreSQL
-
+- 
 ## What is an API? How do you know what type of API it is?
 ## How is Google maps API implemented into your project?
