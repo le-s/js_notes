@@ -46,6 +46,7 @@
 ## Ruby
 ## Ruby on Rails
 - How does the backend interact with the frontend?
+  - When the user starts makes a request it'll eventually make an AJAX call. In this call there will be an endpoint that will match a Rails Route. This route will match a controller and return a response to the frontend.
 - How does it work? MVC?
 ## Express
 - What is Express?
