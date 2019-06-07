@@ -93,6 +93,7 @@
   - use rails g migration {tableName} to create a table => add column names after => rails db:migrate to create the table
   - then create the model for assocications 
 ## How do you implement AWS S3 into your project?
+- 
 ## How do you avoid (n + 1) queries?
 ## What's the benefit to avoiding multiple queries?
 - Reduced server load results in smoother user experience
