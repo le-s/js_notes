@@ -104,3 +104,48 @@
 - 
 ## What is an API? How do you know what type of API it is?
 ## How is Google maps API implemented into your project?
+## 6 Steps to Usability Concerns
+- Record the undesirable outcome
+  - Did users make a mistake, not notice an element, take too long to complete a task or fail to complete the task entirely?
+- Identify what on the interface is causing the problem
+- Is the problem local or global
+- Assign a severity rating
+- Recommend possible solutions
+- Present usability problem
+
+## Difference between HTML & HTML5
+- SVG, Canvas & other virtual vector graphics are supported on HTML5
+  - on HTML you had to use other technologies in conjunction to make it work like Flash, VML & Silver-light
+- HTML5 uses web SQL databases, application cache for temporary storage data
+  - HTML only used browser cache
+- HTML5 allows JavaScript to be run within the browser
+- HTML5 supports new form controls (ex. date, times, email, number, tel, url)
+- HTML5 introduces new elements like(summary, time aside, audio, command, data, and more) 
+  - makes the HTML more semantic
+### Pros of HTML5
+- Persistent error handling
+  - browsers have support to parse structurally/syntatically incorrect HTML code
+- Improved semantic elements
+- Mobile web made easier
+  - more mobile support with HTML5
+- The canvas element
+  - can completely replaces Flash
+- The menu element
+  - semantic way of creating a menu
+- Cookies
+  - Local storage was added in HTML5. Before in HTML4, devs would have to use cookies
+  - Local storage is an object (localStorage) that is available on the global window
+### End user Advantages for HTML5
+- Mobile browsers crash a lot less
+- More reliable mobile websites
+- The removal of Adobe Flash will now give developer the ability to create graphic-rich UX
+- Ability to support native audio and video elements
+  - Users will not have to download plugins to view media on a website
+
+## W3C Compliant Website
+- HTML and CSS code that are compliant with the standards set by the World Wide Web Consortium
+  - Web Design & Applications, Web of Devices, Web Architecture, Semantic Web, XML Technology, Web of Services, Browsers and Authoring Tools
+- You can use a [W3C validator tool](https://validator.w3.org/) to check if your website is compliant
+- W3C compliance is extremely strict and will most often throw up an error regardless if your website loads fine on the browser
+  - browsers are generally flexiable and are built to handle a wide range of HTML & CSS code
+- With a W3C compliant website web crawlers are able to read your website better making for better SEO. Although 100% is often difficult to achieve as long as your code is structured well 100% is not necessary for optimized SEO.
