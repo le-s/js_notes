@@ -29,6 +29,17 @@
     - presentational component => used to display information; does not have state, passed props
   - Stateful => functional component => 
     - logic involved; handling of state (ex. form inputs and storing those inputs); can mutate state (setState)
+- Functions in React
+  - Mounting
+    - constructor()
+    - render()
+    - componentDidMount()
+  - Updating
+    - render()
+    - componentDidUpdate()
+    - shouldComponentUpdate()
+  - Unmount
+    - componentWillUnmount()
 ## Redux
 - What is Redux?
   - A library that allows you to create a store that contains the entire state of your app
@@ -175,3 +186,29 @@ ex.
 - W3C compliance is extremely strict and will most often throw up an error regardless if your website loads fine on the browser
   - browsers are generally flexiable and are built to handle a wide range of HTML & CSS code
 - With a W3C compliant website web crawlers are able to read your website better making for better SEO. Although 100% is often difficult to achieve as long as your code is structured well 100% is not necessary for optimized SEO.
+
+##Accessible Websites (WCAG, 508)
+- WCAG (Web Content Accessibility Guidelines)
+  1. Provide content that can be conveyed the same function or purpose with auditory or visual content
+  2. Text and graphics are understandable without color
+  3. Use markup and style sheets properly
+    - users that have to use specialized software to understand the organization of a page or to navigate through it
+  4. Clarify natural language usage
+    - use markup that facilitates pronunciation or interprationg of abbreviated or foreign text
+      - so that speech synthesizers and braille devices and switch to appropiate language
+  5. Create tables that transform gracefully
+    - so that accessible browsers can transform and read appropriately
+  6. Ensure that pages featuring new technologies transform gracefully
+  7. Ensure user control of time sensitive content changes
+    - moving, blinking, scrolling, or auto-updating objects or pages may be paused or stopped
+  8. Ensure direct accessibility of embedded user interfaces
+  9. Design for device-independence
+  10. Use interim solutions
+    - so that assistive technologies and older browsers will operate correctly
+  11. Use W3C technologies and guidelines
+  12. Provide context and orientation information
+  13. Provide clear navigation mechanisms
+  14. Ensure documents are clear and simple
+- 508
+  - requires federal government websites to be safe and accessible for people with disabilities
+    - people with limited vision or blindness, deafness, seizure disorders and other disabilities
