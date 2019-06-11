@@ -141,7 +141,33 @@
 - The removal of Adobe Flash will now give developer the ability to create graphic-rich UX
 - Ability to support native audio and video elements
   - Users will not have to download plugins to view media on a website
+  
+## CSS vs CSS3
+- Added: Modules => which allow designing to be done in less time with more ease while updating indvidual features
+  - 4 Big modules are: Color, Selector, Namespaces, and Media Queries
+    - The most important is probably media queries which allow applications of certain conditions to have certain style sheets
+ex.
+```css
+@media screen and (max-width: 600px) {
+    background: #FFFFFF;
+}
 
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    background: #FFFFFF;
+}
+```
+- vendor prefixes => help browsers interpret code
+  - -moz- : Firefox
+  - -webkit- : Webkit browsers like Apple Safari and Google Chrome
+  - -o- : Opera
+  - -ms- : Internet Explorer
+- added pseudo-classes
+- new css properties: 
+  - rounded borders
+    - new border properties
+  - text shadow
+  - adding columsn easier
+  - add multiple backgrounds
 ## W3C Compliant Website
 - HTML and CSS code that are compliant with the standards set by the World Wide Web Consortium
   - Web Design & Applications, Web of Devices, Web Architecture, Semantic Web, XML Technology, Web of Services, Browsers and Authoring Tools
