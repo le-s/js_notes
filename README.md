@@ -150,12 +150,13 @@ console.log(a) //{num: 2}
 - you can modify const if it is not a primitive value
     - you can push to an array, but cant reassign the const to a new array
     
-## difference between undefined & null
+## difference between undefined & null & undeclared
 - both represent empty values
 - undefined is the default value when a variable is 
 - null is defined by the user
 - typeof(undefined) => undefined
 - typeof(null) => object
+- undeclared = when you create a variable but do not assign it anything
 
 ## use of arrow functions?
 - when in a function scope, this would refer to the window
