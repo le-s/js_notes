@@ -61,6 +61,9 @@
 - How does it work? MVC?
 ## Express
 - What is Express?
+  - (Simplified) Express.js is to Node.js what Ruby on Rails or Sinatra is to Ruby
+  - Express is a framework that allows you to organize you web application into an MVC architecture
+  - Express.js basically helps you manage everything, from routes, to handling requests and views.
 - How is it implemented?
 ## MERN Frontend + Backend
 - Create the Frontend with React. Backend with Express. Frontend and Backend interact with the use of Axios.
