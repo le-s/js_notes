@@ -65,6 +65,8 @@
   - Express is a framework that allows you to organize you web application into an MVC architecture
   - Express.js basically helps you manage everything, from routes, to handling requests and views.
 - How is it implemented?
+  - installed as a dependency
+  - imported into the app.js file and express() is invoked and set to the production environment
 ## MERN Frontend + Backend
 - Create the Frontend with React. Backend with Express. Frontend and Backend interact with the use of Axios.
 - EX. Fill out form in the frontend. The submit button has an action that gets dispatched with the form data. Inside that action there is an axios call with the post method and the backend endpoint. The backend will return new data that will be passed to the reducer and change the state.
