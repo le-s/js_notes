@@ -108,6 +108,15 @@
 - DB have tables and rows, Rails has models(classes) & objects
   - use rails g migration {tableName} to create a table => add column names after => rails db:migrate to create the table
   - then create the model for assocications 
+## What is RESTful api convention?
+- exposing resources such as cars in a meainingful address such as '/api/cars' with supported various operations around them using standard http requests 
+```
+GET /api/cars
+GET /api/cars/1
+POST /api/cars
+PUT or PATCH /api/cars/1
+DELETE /api/cars/1
+```
 ## How do you implement AWS S3 into your project?
 - 
 ## How do you avoid (n + 1) queries?
