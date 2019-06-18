@@ -117,9 +117,13 @@ POST /api/cars
 PUT or PATCH /api/cars/1
 DELETE /api/cars/1
 ```
+## What does JBuilder do?
+- Returns a predictable generated JSON object ensuring that too much or too little data is being sent to the Frontend
 ## How do you implement AWS S3 into your project?
-- 
+- Installing a gem file
+- Setting the storage.yml file for prod and dev to AWS and filling in the credentials/keys to access to correct buckets
 ## How do you avoid (n + 1) queries?
+- Instead of using Rails ActiveStorage's association 'has_many_attached', which would hit the DB for every photo, used 'with_attached_photos', which would grab all photos in one hit of the DB.
 ## What's the benefit to avoiding multiple queries?
 - Reduced server load results in smoother user experience
 ## What is Webpack? What does it do?
