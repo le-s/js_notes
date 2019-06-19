@@ -132,6 +132,11 @@ DELETE /api/cars/1
 ## How does a query find what it's looking for? In PostgreSQL
 - 
 ## What is an API? How do you know what type of API it is?
+- Application Programming Interface
+- Open API
+- Partner API
+- Internal API
+- Composite API
 ## How is Google maps API implemented into your project?
 ## 6 Steps to Usability Concerns
 - Record the undesirable outcome
@@ -170,7 +175,16 @@ DELETE /api/cars/1
 - The removal of Adobe Flash will now give developer the ability to create graphic-rich UX
 - Ability to support native audio and video elements
   - Users will not have to download plugins to view media on a website
-  
+
+## Benefits of OOP
+- Encapsulation => group related functions and properties together 
+  - reduce complexity + increase reusability
+- Abstraction => hide details and complexity and only show the essentials
+  -  reduce complexity + isolate impact of changes
+- Inheritance => an object that can be inherited by other objects (ex. HTMLElement with properties of hidden & innerHTML, functions of click() or focus(); that can be inherited into TextBox, Select, or CheckBox)
+  - Eliminate redundant code
+- Polymorphism
+  - refactor ugly switch/case statements
 ## CSS vs CSS3
 - Added: Modules => which allow designing to be done in less time with more ease while updating indvidual features
   - 4 Big modules are: Color, Selector, Namespaces, and Media Queries
