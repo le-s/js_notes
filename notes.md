@@ -135,9 +135,9 @@ DELETE /api/cars/1
 - 
 ## What is an API? How do you know what type of API it is?
 - Application Programming Interface
-- Open API
-- Partner API
-- Internal API
+- Open API => for everyone
+- Partner API => given to partners/paid
+- Internal API => created for internal purposes
 - Composite API
 ## How is Google maps API implemented into your project?
 ## 6 Steps to Usability Concerns
