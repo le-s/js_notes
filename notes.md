@@ -29,6 +29,23 @@
     - presentational component => used to display information; does not have state, passed props
   - Stateful => functional component => 
     - logic involved; handling of state (ex. form inputs and storing those inputs); can mutate state (setState)
+- Function componenet vs. Class component
+  - Function componeent
+```js
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+  - Class component
+```js
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+  - Both return the same thing
+  - Only class components can control state changes and life cycle methods
 - Functions in React
   - Mounting
     - constructor()
