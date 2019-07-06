@@ -6,7 +6,7 @@
 - put one function into another function
 - A good example of a higher order function is filter
     - 
-## Callback functions
+## Callback functions 
 - functions that you send into another function
 - host function will callback to them
 
@@ -161,6 +161,7 @@ console.log(a) //{num: 2}
 ## use of arrow functions?
 - when in a function scope, this would refer to the window
     - using fat arrow function will allow for a more predictable output
+- scope?
     
 ## what is prototypal inheritance?
 - every object has a property of prototype where you can add methods and properties to it
