@@ -57,6 +57,8 @@ class Welcome extends React.Component {
     - shouldComponentUpdate()
   - Unmount
     - componentWillUnmount()
+## React vs Angular
+  - Why might someone use either or?
 ## Redux
 - What is Redux?
   - A library that allows you to create a store that contains the entire state of your app
