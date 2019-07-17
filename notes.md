@@ -60,7 +60,7 @@ class Welcome extends React.Component {
 ## React vs Angular
   - Why might someone use either or?
   - 
-## How would you change state?
+## How would you change state for an autoupdate like score on a website?
 ## Redux
 - What is Redux?
   - A library that allows you to create a store that contains the entire state of your app
