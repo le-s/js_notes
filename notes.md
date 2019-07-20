@@ -62,7 +62,6 @@ class Welcome extends React.Component {
     - Angular
       - Created along side typescript & has support for it
       - One way data binding = minimizes risk of possible errors
-      
 ## How would you change state for an autoupdate like score on a website?
 ## Redux
 - What is Redux?
