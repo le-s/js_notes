@@ -216,7 +216,23 @@ form.addEventListener('input', function (event) {
 }, false);
 '''
 
+## Event Bubbling vs Event Capturing
+- Event Bubbling: runs the handler on the current element, then to its parents, up to its ancestors until it gets to html
+- Event Capturing: vice versa of bubbling; it goes from html or top node down to the target element
+- Use stopPropagation(); to prevent bubbling/capturing
+
+## display:none vs visibility:hidden
+- display:none => there is not space allotted for it on the page, but you can still interact with it through DOM manipulation
+- visibility:hidden => there is space allotted for it on the page; the tag is rendered, but not visible
 # General Trivia
+
+## How can you optimize a web page?
+1. Implement your own CDN (Content Delivery Network)
+2. Use adaptive images
+3. Cache
+4. Combing images onto CSS sprites
+5. Minimal use of JS & CSS => remove line breaks, extra space to speed up read time
+6. Allowing the html to finish loading before loading any JS
 
 ## What happens when you go to a url?
 1. Type in url
