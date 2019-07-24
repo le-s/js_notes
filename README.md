@@ -113,6 +113,15 @@ change(a)
 console.log(a) //{num: 2}
 ```
 
+## Type Coercion
+- Whats the difference between == & ===
+    - == comparies the value
+        - 2 == 2 // true
+        - 2 == '2' // true
+    - === compares the value AND type
+        - 2 === 2 //true
+        - 2 === '2' //false
+
 ## Falsey values 
 - False, 0, NaN, undefined, Null, "" (empty string)
 
@@ -191,6 +200,21 @@ let funcE = function() {
 ## setTimeout()
 - more of a puzzle when asked
 - setTimeout() makes it asynchronous making it execute once everything in the call stack has been executed
+
+## Event Delegation
+- Technique for listening to events where you delegate a parent element as the listener for all of the events
+    - EX: adding an event listener on the parent node to listen to all inputs in the children nodes
+'''js
+var form = document.querySelector('#hogwarts-application');
+
+// Listen for changes to fields inside the form
+form.addEventListener('input', function (event) {
+
+	// Log the field that was changed
+	console.log(event.target);
+
+}, false);
+'''
 
 # General Trivia
 
