@@ -148,11 +148,6 @@ console.log(a) //{num: 2}
 - let is block scope
 - var gets hoisted
 
-## == vs ===
-- both are comparison operators
-- == compares value, not type
-- === compares value and type
-
 ## let vs const
 - you can reassign let variables
 - const you cannot reassign
