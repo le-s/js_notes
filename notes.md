@@ -224,6 +224,7 @@ ex.
     background: #FFFFFF;
 }
 ```
+
 - vendor prefixes => help browsers interpret code
   - -moz- : Firefox
   - -webkit- : Webkit browsers like Apple Safari and Google Chrome
