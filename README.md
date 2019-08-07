@@ -154,6 +154,8 @@ console.log(a) //{num: 2}
 - you can modify const if it is not a primitive value
     - you can push to an array, but cant reassign the const to a new array
     
+## Why use const? Scope?
+    
 ## difference between undefined & null & undeclared
 - both represent empty values
 - undefined is the default value when a variable is 
