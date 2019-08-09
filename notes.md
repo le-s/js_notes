@@ -181,6 +181,7 @@ DELETE /api/cars/1
 - HTML5 supports new form controls (ex. date, times, email, number, tel, url)
 - HTML5 introduces new elements like(summary, time aside, audio, command, data, and more) 
   - makes the HTML more semantic
+
 ### Pros of HTML5
 - Persistent error handling
   - browsers have support to parse structurally/syntatically incorrect HTML code
@@ -270,3 +271,4 @@ ex.
 - 508
   - requires federal government websites to be safe and accessible for people with disabilities
     - people with limited vision or blindness, deafness, seizure disorders and other disabilities
+
