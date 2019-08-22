@@ -221,6 +221,7 @@ form.addEventListener('input', function (event) {
 ## display:none vs visibility:hidden
 - display:none => there is not space allotted for it on the page, but you can still interact with it through DOM manipulation
 - visibility:hidden => there is space allotted for it on the page; the tag is rendered, but not visible
+
 # General Trivia
 
 ## How can you optimize a web page?
