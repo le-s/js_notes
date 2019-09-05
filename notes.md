@@ -68,6 +68,8 @@ class Welcome extends React.Component {
 - What is Redux?
   - A library that allows you to create a store that contains the entire state of your app
     - To change the state you must deploy an action that gets traced to the reducer that will return how you want the state returned
+  - LifeCycle
+    - Action creater => Produces an action => Gets fed to a Dispatch => forwards to Reducer => Creates new state => wait until state changes again
 ## Node.js
 - What is Node?
   - run-time environment that includes everything you need to execute a program written in JS
