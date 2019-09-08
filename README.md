@@ -194,6 +194,28 @@ let funcE = function() {
 ## what is a promise? Why do we use it
 - is the promise of the eventual completition of something
 - Easier to debug/cleaner code
+- when you create a new Promise; it takes in two arguments, resolve and reject
+ex. 
+```js
+function watchTutorialPromise() {
+	return new Promise((resolve,reject) => {
+		if (userLeft) {
+			reject({
+				name: 'User Left ',
+				message: ':('
+			});
+		} else {
+			resolve('Thumbs up')
+		}
+	})
+}
+
+watchTutorialPromise().then((message) => {
+	console.log('Success' + message);
+}).catch((error) => {
+	console.log(error.name + error.message);
+})
+```
 
 ## setTimeout()
 - more of a puzzle when asked
