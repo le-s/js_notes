@@ -241,6 +241,13 @@ form.addEventListener('input', function (event) {
 - Event Capturing: vice versa of bubbling; it goes from html or top node down to the target element
 - Use stopPropagation(); to prevent bubbling/capturing
 
+## Difference between document ```load``` event and document ```DOMContentLoaded``` event?
+- DOMContentLoaded event is fired when the initial HTML content has completely loaded and parsed without waiting for stylesheets, images, and subframes to finish loading
+- window's load event only fired after the DOM and all dependent resources and assets have loaded
+
+## What is same-origin policy with regards to JS
+- same-origin policy prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page's Document Object Model
+
 ## display:none vs visibility:hidden
 - display:none => there is not space allotted for it on the page, but you can still interact with it through DOM manipulation
 - visibility:hidden => there is space allotted for it on the page; the tag is rendered, but not visible
