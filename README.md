@@ -236,6 +236,44 @@ form.addEventListener('input', function (event) {
 }, false);
 '''
 
+### Debounce
+- when you want your function to postpone its next execution until after X milliseconds have elapsed since the last time it was invoked
+```js
+// as long as it continues to be invoked, it will not be triggered
+function debounce (func, interval) {
+  var timeout;
+  return function () {
+    var context = this, args = arguments;
+    var later = function () {
+      timeout = null;
+      func.apply(context, args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, interval || 200);
+  }
+}
+```
+
+### Throttle
+- when you need to ensure that events fire at given intervals
+```js
+// as long as it continues to be invoked, raise on every interval
+function throttle (func, interval) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function () {
+      timeout = false;
+    };
+    if (!timeout) {
+      func.apply(context, args)
+      timeout = true;
+      setTimeout(later, interval)
+    }
+  }
+}
+```
+
 ## Event Bubbling vs Event Capturing
 - Event Bubbling: runs the handler on the current element, then to its parents, up to its ancestors until it gets to html
 - Event Capturing: vice versa of bubbling; it goes from html or top node down to the target element
