@@ -254,6 +254,7 @@ function debounce (func, interval) {
 }
 ```
 
+
 ### Throttle
 - when you need to ensure that events fire at given intervals
 ```js
