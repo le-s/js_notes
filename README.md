@@ -37,6 +37,51 @@ logIt();
 - when a function is executed, once it finishes executing it's variables cease to exist
 - the inner function preserves the scope chain of the enclosing function at the time the enclosing function was executed, and thus can access the enclosing function’s variables.
 
+## Call vs Apply vs Bind
+- Essentially the same
+- You call/apply a function on an object
+- You want to invoke the function immediately, and modify the context.
+
+---
+
+### Call: Can take in any number of arguments
+### Apply: Takes an array
+
+ex.
+```js
+let obj = {num: 2};
+let addToThis = funcion(a,b,c) { 
+  return this.num + a + b + c;
+}
+
+addToThis.call(obj, 1,2,3)
+addToThis.apply(obj, [1,2,3])
+```
+
+## Bind
+- Bounds the function & object together to be used in the future
+- Can then invoke with arguments needed
+
+ex. for apply, call, bind
+
+```js
+let obj = {num: 2};
+
+let functionName = function(arg1, arg2, arg3) {
+  // do something
+}
+
+// Call
+functionName.call(obj, arg1, arg2, arg3);
+
+// Apply
+functionName.apply(obj, [arg1, arg2, arg3]);
+
+// Bind
+var bound = functionName.bind(obj);
+bound(arg1, arg2, arg3);
+```
+
 ## Primitive Data Types
 - String, Number, Null, undefined, Boolean, Symbols(ES6)
 - When declared and passed as an argument, making changes to the variable that was used as an argument does not persist outside of the function
