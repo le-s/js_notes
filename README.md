@@ -1,6 +1,5 @@
 # js_notes
 
-
 ## Higher order functions
 - returns a function
 - put one function into another function
