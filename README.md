@@ -30,7 +30,6 @@ function logIt(){
 };
 logIt();
 ```
-
 ## Closures
 - A feature in JS where the inner function has access to the outer function's variables
 - when a function is executed, once it finishes executing it's variables cease to exist
