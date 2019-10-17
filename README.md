@@ -43,6 +43,7 @@ logIt();
 ---
 
 ### Call: Can take in any number of arguments
+
 ### Apply: Takes an array
 
 ex.
