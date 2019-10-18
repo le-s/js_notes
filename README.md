@@ -318,7 +318,10 @@ function throttle (func, interval) {
   }
 }
 ```
-
+## Example of usage for throttle & debounce
+- Measure the scroll position of the page — The browser will fire the scroll binding event every single time the user scrolls, which can result in many events per scroll. If the binding event performs several repaints, this spells bad news for the end-user; layout reflows and repaints are expensive, especially when you are redrawing large parts of the view, as is the case when there is a scroll event.
+- Wait until the user stops resizing the window — Window resize operations cause various child elements to update themselves by resizing and re-organizing themselves. By throttling, you can delay the resize events and fire fewer of those resizing events.
+- Fire Ajax calls under control and avoid unnecessary network request handling— for example, in case of searching for external data, wait until the end-user stops typing by using debounce. If you are sending log data frequently, use throttle.
 ## Event Bubbling vs Event Capturing
 - Event Bubbling: runs the handler on the current element, then to its parents, up to its ancestors until it gets to html
 - Event Capturing: vice versa of bubbling; it goes from html or top node down to the target element
