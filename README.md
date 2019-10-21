@@ -157,7 +157,17 @@ let change = (val) => {
 change(a)
 console.log(a) //{num: 2}
 ```
-
+### Maps vs. Objects
+- For objects; keys can only be set with a string or symbol
+  - Keys are not ordered
+  - Get size through Object.keys().length
+  - Has to be looped
+- Maps
+  - Keys are ordered
+  - Return keys in order of insertion
+  - Can do Map.size()
+  - Can iterate through
+ 
 ## Type Coercion
 - Whats the difference between == & ===
     - == comparies the value
