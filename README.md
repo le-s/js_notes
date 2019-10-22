@@ -192,6 +192,13 @@ console.log(a) //{num: 2}
 - Express is a framework that allows you to organize you web application into an MVC architecture
 - Express.js basically helps you manage everything, from routes, to handling requests and views.
 
+### Sets vs Arrays
+- biggest difference is that arrays can have duplicate values and sets have unique values
+- data in an array is ordered by index whereas Sets use keys & the elements are iterable in the order of insertion
+- adding elements; arrays were about 4 times faster
+- iterating; arrays were faster
+- removing; sets were significantly faster
+- because of the signifcant difference in removing an element; sets were overall faster for larger cases (10k test cases vs 100k test cases)
 
 ## ES6 vs ES5
 
