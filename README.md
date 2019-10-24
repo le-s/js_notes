@@ -111,6 +111,19 @@ inspireFear(threatLevel);
 console.log(threatLevel); // [ 'hello', 'world', '!' ]
 ```
 
+### Object vs Array
+- Arrays are objects with more functions
+- Objects & Arrays accessing is O(1)
+- Arrays
+  - whenever we want to create and store a list of multiple items in a single variable. Arrays are especially useful when creating ordered collections where items in the collection can be accessed by their numerical position in the list
+  - Lookup, assign = O(1)
+  - Insert, remove, find = O(n)
+  - Pushing = amoritizing
+    - making an array dynamic by doubling its size, copying all elements over which cost O(n), but now get appending for O(1) for double the size;
+    - one append of O(n) every now and then is not that bad
+- Objects
+  - lookup, insertion, retrieval is O(1)
+
 ## Pass by reference vs Pass by value
 - If you pass a variable into a function
   - Pass by reference: if you change the value inside of the function, the change gets reflected tot he variable outside
