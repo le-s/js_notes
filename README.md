@@ -215,7 +215,6 @@ console.log(a) //{num: 2}
 
 ## ES6 vs ES5
 
-
 # Possible interview questions for JS
 
 ## var vs let
