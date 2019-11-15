@@ -368,7 +368,6 @@ function throttle (func, interval) {
 - visibility:hidden => there is space allotted for it on the page; the tag is rendered, but not visible
 
 # General Trivia
-
 ## How can you optimize a web page?
 1. Implement your own CDN (Content Delivery Network)
 2. Use adaptive images
