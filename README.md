@@ -4,7 +4,7 @@
 - returns a function
 - put one function into another function
 - A good example of a higher order function is filter
-    - 
+
 ## Callback functions 
 - functions that you send into another function
 - host function will callback to them
