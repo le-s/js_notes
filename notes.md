@@ -158,7 +158,7 @@ DELETE /api/cars/1
 ## What is Babel?
 - Babel is a transpiler. It can translate all kinds of high version ECMAScript ( not only ECMAScript, but it's easy to understand) into ES5, which is more widely supported by browsers (especially older versions). It's main job is to turn unsupported or cutting-edge language features into ES5.
 ## How does a query find what it's looking for? In PostgreSQL
-- 
+
 ## What is an API? How do you know what type of API it is?
 - Application Programming Interface
 - Open API => for everyone
