@@ -1,5 +1,4 @@
 # Skills 
-
 ## PostgreSQL
 - what is it?
   - Relational database
