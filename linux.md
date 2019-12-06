@@ -103,4 +103,17 @@ locate {filename} | less
 - $PATH
   - contains the list of folders that the system uses or checks when you type in a command
 - ./{program name}
-  - 
+  - running a program
+- ps aux
+  -  give you all the processes running on your computer
+- When a program is running
+  - pressing CTRL-C will terminate the program
+  - pressing CTRL-Z will pause the program; shifts to the background
+- bg  
+  - will show you programs in the background
+- jobs
+  - see if all programs are running correct in the background and their status
+- fg {job number}
+  - run program again
+
+## Interview Questions
