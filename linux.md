@@ -3,6 +3,7 @@
 ## General
 - Linux is not Unix
 - Linux is an OS; some of the fastest computers run on some part of Linux
+- Command line is also known as shell
 
 ## Directory Structure
 ### Root Directory
@@ -99,6 +100,8 @@ ex. will allow you to locate all files and scroll through them
 ```shell
 locate {filename} | less
 ```
+- apropos {"description of command" in quotations} => returns possible commands that describe the description provided
+  - ex. apropos "list"
 ### Run a program
 - $PATH
   - contains the list of folders that the system uses or checks when you type in a command
