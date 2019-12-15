@@ -4,7 +4,45 @@
 - Linux is not Unix
 - Linux is an OS; some of the fastest computers run on some part of Linux
 - Command line is also known as shell
+- root has two meanings
+  - the directory
+  - the user access
 
+## Reading a file
+- rwxrwxrwx
+  - first rwx means user that owns the file
+  - second rwx means the group that ownss the file
+  - third rwx means all other users that are not in the group that owns the file
+- rwx
+  - r: read => see contents of file but not make changes
+  - w: write => can make changes but not read file
+  - x: execute => someone can run the file without loading the script into another program
+### Setting file permissions
+- chmod command
+  - ex. chmod 644 test.sh ; chmod a-x test.sh
+  - two methods to change: octal and symbolic
+    - octal
+      - read => 4
+      - write => 2
+      - execute => 1
+      ex. 777 => all users have read write execute permission; 755 => user has all permissions, group & other has read and execute permission; 644 => user has read and write permission, group and other has read permission; 700 => user has all permission, group and other have no permission
+    - symbolic
+      - u => user
+      - g => group
+      - o => other
+      - a => all
+      - + => adds permission
+      - = => adds specific permission but removes all others
+      - - => removes permission
+      ex. u+rwx => adds all permissions to user; g=r => adds read permission to groups, but removes write and execute permission; o-rwx => removes all permissions to others
+        
+## Links
+- Hard Link => points to data on the disk
+  - command ln (file name) (new file name)
+  - can move files around and holds reference
+- Soft Link => points to a file on the disk
+  - command ln -s (file name) (new file name)
+  - if you move either or files, the link will break
 ## Directory Structure
 ### Root Directory
 - ROOT 
@@ -30,6 +68,13 @@
   - contains user program and other data
 - VAR
   - where system must be able to write during operation; like system logs
+
+## Searching texts in a file
+- grep command
+- use grep -E for RegEx
+
+## Manipulate text
+- awk command => 
 
 ## Reading command lines
 ### Account
@@ -100,8 +145,12 @@ ex. will allow you to locate all files and scroll through them
 ```shell
 locate {filename} | less
 ```
+- chown => change ownership of file
 - apropos {"description of command" in quotations} => returns possible commands that describe the description provided
   - ex. apropos "list"
+- sudo ls /root => to gain access to root user * will give you access to super user priveleges temporarily
+  - sudo -k => to give up priveleges 
+  - sudo -s => gives you super user privs until you give it up
 ### Run a program
 - $PATH
   - contains the list of folders that the system uses or checks when you type in a command
@@ -120,3 +169,37 @@ locate {filename} | less
   - run program again
 
 ## Interview Questions
+### How can you see which kernal version a system is currently running?
+- uname command => prints out system information
+  - uname -a => prints all system info
+### How can you check a current system's ip address?
+- old way: ifconfig
+  - look for inet for ip address
+- new way: ip addr show
+  - can be more specific and do command: ip addr show eth0
+### How do you check for free disk space?
+- df (display free)
+  - df -ah => display all human readable
+    - to see how much is available; see what is mounted to the root "/"
+### How do you manage services on a system?
+- old way(system c) => command: service {service name} argument
+  - service name could be udev, nginx, mysql
+  - ex. service udev status ; service nginx start
+- new way(system d) => command: systemctl argument {service name} 
+### How would you check the size of a directory's contents on disk?
+- command: du -sh {directory name} 
+  - du => disk usage
+### How would you check for open ports or listening network sockets or service listening on tcp or udp ports or sockets?
+- command: netstat 
+  - netstat -tulpn => for most cases
+### How do you check CPU usage for a process?
+- command: ps aux | grep {process name}
+  - ex. ps aux | grep nginx
+- command: top or htop
+### Dealing with mounts (like plugging in usb stick)
+- command: mount {absolute path to} {mount point}
+  - ex. mount /dev/sda2 /mnt
+  - mount command will check for existing mounts
+### How do you look up something you don't know?
+- commmand: man
+### What do you do when you can find something using man?
