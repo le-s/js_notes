@@ -7,7 +7,6 @@
 - root has two meanings
   - the directory
   - the user access
-
 ## Reading a file
 - rwxrwxrwx
   - first rwx means user that owns the file
@@ -203,6 +202,10 @@ locate {filename} | less
 ### How do you look up something you don't know?
 - commmand: man
 ### What do you do when you can find something using man?
+
+## Downloading any service
+- command: sudo apt-get update => run this first to update repository
+- command: sudo apt-get install {service name} 
 
 ## About Nginx
 - Nginx uses Master-Slave architecture by supporting event driven, asynchrous and non-blocking model
