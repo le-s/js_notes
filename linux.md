@@ -204,6 +204,15 @@ locate {filename} | less
 - commmand: man
 ### What do you do when you can find something using man?
 
+## About Nginx
+- Nginx uses Master-Slave architecture by supporting event driven, asynchrous and non-blocking model
+- Features
+  - ease of installation/maintainence
+  - Improves performance
+  - Scalable
+  - Reduces wait time for users
+  - Load balancing
+  - upgradable
 
 ## Configuring Linux servers Nginx
 - all configuration files are located in /etc/nginx/
