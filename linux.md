@@ -203,3 +203,16 @@ locate {filename} | less
 ### How do you look up something you don't know?
 - commmand: man
 ### What do you do when you can find something using man?
+
+
+## Configuring Linux servers Nginx
+- all configuration files are located in /etc/nginx/
+  - main config file is /etc/nginx/nginx.conf
+  - configuration options are called directives
+  - directives are organized into groups called blocks or contexts
+- http block
+  - contain directives for handling web traffic
+  - contains a 'include' directive which tells NGINX where the website configuration files are located 
+    - file contains the SERVER block
+- server block
+  - listen directive => tells NGINX the hostname IP and the TCP port where it should listen for HTTP connections
